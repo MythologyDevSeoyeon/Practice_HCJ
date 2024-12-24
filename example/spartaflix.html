@@ -120,7 +120,7 @@
         })
 
 
-        //데이터베이스에서 자료 가져오기
+        //데이터베이스에서 자료 가져와 카드 생성
         let docs = await getDocs(collection(db, "movies"));
         docs.forEach((doc) => {
             let row = doc.data();
